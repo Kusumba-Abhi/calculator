@@ -101,7 +101,7 @@ double evaluate(Node* root) {
 }
 
 int main() {
-    string  expression = "3 + (4 * 2) / (1 - 5)";
+    string   expression = "3 + (4 * 2) / (1 - 5)";
     vector<string> tokens = tokenize(expression);
     vector<string> postfix = toPostfix(tokens);
     Node* root = buildTree(postfix);
